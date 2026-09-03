@@ -1,0 +1,9 @@
+[project]
+name = "adk-langfuse-demo"
+version = "0.1.0"
+requires-python = ">=3.12"
+dependencies = [
+    "google-adk>=2.8.0",
+    "google-cloud-aiplatform[agent-engines]>=2.1.0",
+    "opentelemetry-exporter-otlp-proto-http>=1.42.1",
+]

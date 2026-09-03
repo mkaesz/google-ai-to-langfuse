@@ -1,0 +1,11 @@
+# ADK Agent Config — the entire agent is declarative YAML, no Python.
+# https://google.github.io/adk-docs/agents/config/
+agent_class: LlmAgent
+name: demo_agent
+model: gemini-2.5-flash
+description: A friendly assistant that can search the web to answer questions.
+instruction: |
+  You are a helpful assistant. Use Google Search to ground your answers
+  in current information when the question calls for it. Answer concisely.
+tools:
+  - name: google_search
